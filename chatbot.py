@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Obtener credenciales desde el entorno
-telegram_token = os.getenv("TELEGRAM_TOKEN")
-firebase_json_path = os.getenv("FIREBASE_JSON_PATH")
+telegram_token = os.getenv("BOT_TOKEN")
+firebase_json_path = os.getenv("FIREBASE_CONFIG_JSON")
 
 # Firebase setup
 cred = credentials.Certificate(firebase_json_path)
