@@ -12,7 +12,7 @@ load_dotenv()
 
 # Obtener credenciales desde el entorno
 telegram_token = os.getenv("BOT_TOKEN")
-firebase_json = os.getenv("FIREBASE_CREDENTIALS")
+firebase_json = os.getenv("FIREBASE_CONFIG_JSON")
 
 # Convertir a diccionario
 cred_dict = json.loads(firebase_json)
