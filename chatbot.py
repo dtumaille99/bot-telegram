@@ -5,6 +5,7 @@ from firebase_admin import credentials, firestore
 from datetime import datetime
 import os
 from dotenv import load_dotenv
+import json
 
 # Cargar variables desde .env
 load_dotenv()
