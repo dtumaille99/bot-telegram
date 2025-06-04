@@ -11,10 +11,17 @@ load_dotenv()
 
 # Obtener credenciales desde el entorno
 telegram_token = os.getenv("BOT_TOKEN")
-firebase_json_path = os.getenv("FIREBASE_CONFIG_JSON")
+firebase_json = os.getenv("FIREBASE_CREDENTIALS")
+
+# Convertir a diccionario
+cred_dict = json.loads(firebase_json)
+
+# Escribir el archivo firebase_config.json
+with open("firebase_config.json", "w") as f:
+    json.dump(cred_dict, f)
 
 # Firebase setup
-cred = credentials.Certificate(firebase_json_path)
+cred = credentials.Certificate("firebase_config.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
