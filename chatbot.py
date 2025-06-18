@@ -104,12 +104,18 @@ def get_total(field_name, field_value, count_field):
 # Contacto institucional
 async def terminar_conversacion(update: Update):
     await update.message.reply_text(
-        "¿Te interesa un análisis más detallado?\n"
-        "- Visita https://ciees.com.ec\n"
-        "- Síguenos en redes sociales:\n"
-        "LinkedIn: CIEES\n"
-        "X: @CIEESec\n"
-        "Facebook: CIEES"
+        "¿Quieres más análisis y datos?\n"
+        "¿Realizar una encuesta o tener asesoría personalizada?\n"
+
+        "📩 Escríbenos:\n"
+        "rociogarzon@ciees.com.ec\n"
+        "📱 099 832 8973\n"
+
+        "Síguenos en Instagram y TikTok como @CieesLatam\n"
+
+        "🔍 En CIEES hacemos que los datos trabajen por ti.\n" 
+        "🔵📊\n"
+        "¡Contáctanos y déjanos ayudarte a tomar decisiones que marcan la diferencia!"
     )
 
 # Inicio
